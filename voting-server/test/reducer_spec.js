@@ -20,7 +20,7 @@ describe('reducer', () => {
             entries: ['Trainspotting', '28 Days Later']
         });
         const action = {type: 'NEXT'};
-        const nextState = reducer('initialState', action);
+        const nextState = reducer(initialState, action);
 
         expect(nextState).to.equal(fromJS({
             vote: {
@@ -48,7 +48,7 @@ describe('reducer', () => {
         }));
     });
 
-    it('can be used with reduce', ( => {
+    it('can be used with reduce', () => {
         const actions = [
             {type: 'SET_ENTRIES', entries: ['Trainspotting', '28 Days Later']},
             {type: 'NEXT'},
