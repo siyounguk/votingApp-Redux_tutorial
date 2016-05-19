@@ -20,7 +20,7 @@ describe('Voting', () => {
         expect(buttons[1].textContent).to.equal('28 Days Later');
     });
 
-    it ('invokes a callback when a button is clicked', () = > {
+    it ('invokes a callback when a button is clicked', () => {
         let votedWith;
         const vote = (entry) => votedWith = entry;
 
